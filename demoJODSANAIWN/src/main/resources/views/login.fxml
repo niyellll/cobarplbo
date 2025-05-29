@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="779.0" prefWidth="1290.0" style="-fx-background-color: #888C8D;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="id.ac.ukdw.www.rpblo.javafx_rplbo.LoginController">
+
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b2b2b2" height="460.0" layoutX="748.0" layoutY="284.0" stroke="BLACK" strokeType="INSIDE" width="422.0" />
+        <VBox alignment="CENTER" layoutX="40.0" layoutY="344.0" spacing="15.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.799999999999955" AnchorPane.topAnchor="344.0">
+         <ImageView fitHeight="124.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@DeWatermark.ai_1747837744913.png" />
+            </image>
+         </ImageView>
+            <Label prefHeight="35.0" prefWidth="75.0" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #393232;" text="LOGIN" />
+            <TextField fx:id="usernameField" maxWidth="250" promptText="Username" style="-fx-background-color: #FFFFFF; -fx-border-color: #776B5D; -fx-border-width: 1px;" />
+            <PasswordField fx:id="passwordField" maxWidth="250" promptText="Password" style="-fx-background-color: #FFFFFF; -fx-border-color: #776B5D; -fx-border-width: 1px;" />
+            <Button maxWidth="100" onAction="#onLogin" style="-fx-background-color: #E8E8E8; -fx-text-fill: black;" text="Login" />
+            <Hyperlink onAction="#goToRegister" style="-fx-text-fill: #393232;" text="Belum punya akun? Daftar di sini" />
+        </VBox>
+    </children>
+</AnchorPane>

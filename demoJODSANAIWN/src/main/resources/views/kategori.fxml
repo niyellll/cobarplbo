@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="350" prefWidth="500" style="-fx-background-color: #888C8D;"
+            xmlns:fx="http://javafx.com/fxml/1"
+            xmlns="http://javafx.com/javafx/23.0.1"
+            fx:controller="id.ac.ukdw.www.rpblo.javafx_rplbo.KategoriController">
+
+    <VBox layoutX="9.0" layoutY="9.0" prefHeight="331.0" prefWidth="479.0" spacing="10">
+        <VBox.margin>
+            <Insets top="20" right="20" bottom="20" left="20"/>
+        </VBox.margin>
+
+        <!-- Input Tambahkan Kategori -->
+        <HBox alignment="CENTER_LEFT" spacing="5">
+            <TextField fx:id="inputKategori"
+                       promptText="Tambahkan kategori..."
+                       HBox.hgrow="ALWAYS"
+                       style="-fx-background-color: white; -fx-text-fill: #393232; -fx-prompt-text-fill: #888C8D;" />
+
+            <!-- Tambah/Edit Button -->
+            <Button fx:id="btnTambah"
+                    onAction="#tambahKategori"
+                    text="Tambah"
+                    style="-fx-background-color: #776B5D; -fx-text-fill: white;" />
+        </HBox>
+
+        <!-- Tabel Kategori -->
+        <TableView fx:id="tabelKategori"
+                   prefHeight="200"
+                   style="-fx-background-color: white;">
+            <columns>
+                <TableColumn fx:id="kolomNama"
+                             prefWidth="300"
+                             text="Nama Kategori"
+                             style="-fx-text-fill: #393232;" />
+
+                <TableColumn fx:id="kolomAksi"
+                             prefWidth="150"
+                             text="Aksi"
+                             style="-fx-text-fill: #393232;" />
+            </columns>
+        </TableView>
+
+        <!-- Tombol Kembali -->
+        <HBox alignment="CENTER_RIGHT" spacing="20">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10" />
+            </padding>
+            <Button text="Cancel"
+                    onAction="#toHalamanUtama"
+                    style="-fx-background-color: #776B5D; -fx-text-fill: white;" />
+        </HBox>
+    </VBox>
+</AnchorPane>
